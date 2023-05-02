@@ -1,17 +1,182 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Web Tech</title>
-	</head>
-	<body>
-		<h1>Hello Web Tech</h1>
-		<a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">
-			<img src="DSCF7739.jpg" alt="photo of my mam" >
-		</a>
-		<p>Something about Web technologies?</p>
-	</body>
-	<style type="text/css">
-		body {background-color:white}
-		h1 {background-color:purple; color:black}
-	</style>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #ffffff;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 45px;
+  text-align: center;
+  background: #004225;
+}
+
+.header h1 {
+  font-size: 60px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #000000;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 16px 20px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #004225;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 25%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 75%;
+  background-color: #ffffff;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 5px;
+  text-align: center;
+  background: #004225;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Secret Sushi</h1>
+</div>
+
+<div class="topnav">
+  <a href="#">Socials</a>
+  <a href="#">Photo gallery</a>
+  <a href="#">Recipes</a>
+  <a href="#">Home</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Roll of the Week</h2>
+      <h4>Salmon & avocado roll</h4>
+      <div class="main_sushi_image.jpg" alt="sushi" style="height:200px;">Sushi</div>
+      <p>About the dish: This is a very simple and basic sushi dish guarateed to quentch your sushi cravings. The simple combination of avacado and salmon produces an amazing flavour profile that is excentuated by properly seasoned sushi rice and nori. </p>
+      <p>Ingredients:
+      		-avocado
+            -salmon
+            -sushi rice
+            -seaweed wrap
+            -nori
+            </p>
+    </div>
+    <div class="card">
+      <h2>Try something different</h2>
+      <h4>California Roll</h4>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>About the dish: This recipe is an americanized version of sushi which has it origins in california.(hence the name) This dish quickly became popular everywhere with its staple ungredients like avocado and crabmeat and combining them with more modernizzed sushi ingredients like spicy mayo. This dish is definatly one for the recipe books.</p>
+      <p>Ingredients: 
+      -sushi rice 
+      -nori seaweed 
+      -sesame seeds 
+      -crabmeat 
+      -mayonaise 
+      -avocado 
+      -cucumber</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Seceret Sushi</h2>
+      <div class="main_sushi_image.jpg" style="height:100px;">Image</div>
+      <p>Welcome to our sushi website, where we celebrate the rich history and artistry of this beloved Japanese cuisine. Sushi has become a global phenomenon, and we are passionate about sharing its flavors, techniques, and cultural significance with you. From the origins of sushi to the latest trends in the industry, our website is a one-stop destination for sushi lovers of all levels. Whether you are a seasoned sushi aficionado or just discovering the joys of this delicate cuisine, we invite you to join us on a journey of exploration and discovery. Let's dive into the world of sushi and discover the unique tastes, textures, and traditions that make it so special.</p>
+    </div>
+    	<div class="card">
+      	<h2>History of sushi<h2>
+      	</div>
+        <div class="rightcolumn">
+      		<p>Sushi is a traditional Japanese dish that has a rich history dating back over 1,000 years. The origins of sushi can be traced back to Southeast Asia, where people would preserve fish by wrapping it in fermented rice. Over time, sushi evolved into the dish we know today, with the development of new techniques and the addition of ingredients such as vinegar, seaweed, and wasabi. During the Edo period in Japan (1603-1868), sushi became widely popular, and the sushi chefs began to specialize in the art of making sushi. Today, sushi is enjoyed around the world and has become a staple in Japanese cuisine.</p>
+        </div>
+        </div>
+    <div class="rightcolumn">
+    <div class="card">
+      <h3>About me</h3>
+      This website has been a fun little project for me to work on for my university course. teachiing me new skills and vauable lessons about html, css and java. This has opened my horizons and shown me a new side to computing. I recorded a vlog about my experience 
+      <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">HERE!</a></p>
+    </div>
+    </div>
+    <div class="card">
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h6>Disclamer!! Recipes are not my own. All of these have been sourced from authentic websites and recipe books. Please check recipe for any allergies before making and consuming.</h6>
+</div>
+
+</body>
 </html>
+
